@@ -3,7 +3,7 @@
 # @Author  : J.sky
 # @Mail    : bosichong@qq.com
 # @Site    : www.17python.com
-'''一些游戏逻辑判断检测相关的封装'''
+'''一个精灵边界碰撞检测工具类'''
 class BorderCrossing:
     '''一个边界碰撞检测类'''
     def __init__(self,xstart,ystart,width,height):
