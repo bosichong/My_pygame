@@ -77,6 +77,12 @@
 import sys, pygame, os
 from pygame.locals import *
 
+
+#导入自定义游戏包
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))#获取当前文件上级目录的绝对地址
+sys.path.append(BASE_DIR)#添加一个模块搜索目录，方便找到自己的建的模块
+from PY_RPG.util import *
+
 class Pyqa:
     def __init__(self,file):
         #########游戏程控制##############
@@ -209,8 +215,8 @@ def print_text(font, x, y, text, color=(255,255,255)):
 pygame.init()
 screen = pygame.display.set_mode((600,500))
 pygame.display.set_caption("Python知识问答")
-font1 = pygame.font.Font('././font/msyh.ttf', 28)
-font2 = pygame.font.Font('././font/msyh.ttf', 16)
+font1 = pygame.font.Font(os.path.join(FONT_DIR,'msyh.ttf'), 28)
+font2 = pygame.font.Font(os.path.join(FONT_DIR,'msyh.ttf'), 16)
 white = 255,255,255
 cyan = 0,255,255
 yellow = 255,255,0
