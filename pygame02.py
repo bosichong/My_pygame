@@ -121,7 +121,7 @@
 import pygame, sys, random
 from os import path
 from pygame.locals import * #导入游戏常量
-from utils.BorderCrossing import *
+from PY_RPG.BorderCrossing import *
 
 
 #一些游戏资源加载及设置
@@ -150,6 +150,7 @@ def runGame():
     myimgs = pygame.sprite.Group()
     for i in range(7):
         myimgs.add(MyImgSprite())
+    print(len(myimgs))
     #创建一个边界碰撞检对象
     bc = BorderCrossing(5,5,SCREEN_WIDTH-10,SCREEN_HEIGHT-10)
     
@@ -189,6 +190,21 @@ def runGame():
         # rst = list_collide = pygame.sprite.spritecollide(m,myimgs,True)
         #true,碰到后直接删除， false会删除Group组中的精灵。
         #########################################
+        #红球之间的碰撞检测
+        ####################
+        for s1 in myimgs:
+            for s2 in myimgs:
+                if s1.rect.x != s2.rect.x: #判断不是同一个sprite
+                    print('不是同一个精灵')
+                    if pygame.sprite.collide_rect(s1, s2):#碰撞检测
+                        print(s1.rect, s2.rect)
+                        s2.speed_x = -s2.speed_x
+                        s2.speed_y = -s2.speed_y
+                        s1.speed_x = -s1.speed_x
+                        s1.speed_y = -s1.speed_y
+                        myimgs.update()#这里需要立即更新红球的坐标
+                            
+                    
         m.update()#更新绿球
         myimgs.update()#更新红球Group
 

@@ -15,7 +15,7 @@
 
 import pygame, sys
 from pygame.locals import * #导入游戏常量
-from utils.BorderCrossing import *
+from PY_RPG.BorderCrossing import *
 import random
 
 
