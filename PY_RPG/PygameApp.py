@@ -1,5 +1,5 @@
 #codeing=utf-8
-# @Time    : 2017-10-26
+# @Time    : 2017-12-28
 # @Author  : J.sky
 # @Mail    : bosichong@qq.com
 # @Site    : www.17python.com
@@ -8,7 +8,7 @@
 # @Details : “编学编玩”用Pygame编写游戏（6）PY_RPG 一个pygame的简单封装。
 # @Other   : OS X 10.11.6 
 #            Python 3.6.1
-#            VSCode 1.15.1
+#            PyCharm
 ###################################
 # “编学编玩”用Pygame编写游戏（6）PY_RPG 一个pygame的简单封装。
 ###################################
@@ -23,7 +23,7 @@ pygame写起游戏都是函数式编写，对于一些简单的小游戏或许�
 
 游戏中的关键词，假设游戏没有条件判断，那么游戏从头运行到尾就是一部电影。
 这样的话，我们定义一些游戏的基本对象：
-渲染器（APP）--只负责渲染游戏场景中存在的游戏片段，属性有：一个游戏片段容器，及一些游戏窗口常用设置，并初始化游戏设置。
+渲染器（APP）--只负责渲染游戏场景中存在的游戏片段，属性有：一个游戏片段容器及一些游戏窗口常用设置，并初始化游戏设置。
 游戏片段(scene)--可能是游戏中的一个片段，一个情节，一节过场，片头，片尾等，游戏片段中包含一个开关属性，用来控制是否可以渲染此游戏片段。
 游戏逻辑判断器--游戏中的裁判，负责判断修改游戏中的执行条件。
 精灵--游戏中的角色，他可以是游戏中的场景，主角，配角，怪物，子弹，文字对白。
@@ -47,28 +47,34 @@ pygame写起游戏都是函数式编写，对于一些简单的小游戏或许�
 
 ## 如何使用PY_RPG？
 
-    app = GameApp("gameapp test",(640,480),24)#创建游戏
-    app.scenes.append(MainScene())#创建游戏菜单
-    app.scenes.append(TestScene())#创建游戏内容
-    app.scenes.append(GameOverScene())#游戏结束画面
+    app = GameApp()#创建游戏
+    appscreen = app.screen#获取渲染器
+    app.scenes.append(MainScene(appscreen))#创建游戏菜单
+    app.scenes.append(TestScene(appscreen))#创建游戏内容
+    app.scenes.append(GameOverScene(appscreen))#游戏结束画面
     app.run() #游戏开始
 
 根据需要创建并重写上边的三个类，然后创建游戏就可以了，现在这样看来，游戏的创建是不是很有层次了？
 
-这个框架还没有封装完毕，我还会继续的，之后的游戏制作都要从这个框架上弄起了，初步还要写几个完整的游戏例子。
+这个框架还没有封装完毕，我还会继续的，之后的游戏制作都要从这个框架上弄起了，初步还要写几个完整的小游戏例子。
 
 
 
 '''
-import pygame, os, sys
+import pygame, sys
 from pygame.locals import * #导入游戏常量
 
 class GameApp:
     '''
-    游戏app类，创建一个全新的游戏
+    渲染器（APP）--只负责渲染游戏场景中存在的游戏片段，属性有：一个游戏片段容器及一些游戏窗口常用设置，并初始化游戏设置。
     '''
-    def __init__(self,title,resolution,update_rate):
-        self.title = title
+    def __init__(self,title='游戏窗口',resolution=(640,480),update_rate=24):
+        '''
+        :param title: 游戏标题
+        :param resolution: 场景尺寸(640，480)
+        :param update_rate: 刷频率默认24
+        '''
+        self.title = title#游戏标题
         self.resolution = resolution#分辨率
         self.update_rate = update_rate#刷新频率
         self.scenes = []#所有游戏的片段list
@@ -79,22 +85,33 @@ class GameApp:
         
 
     def run(self):
+        '''
+        游戏开始。
+        '''
         print('游戏开始！')
         while True:
             for scene in self.scenes:
                 #如果当前片段可以开始，则开始渲染
                 if scene.start:
-                    #传递相关参数
+                    #传递相关参数，用来在scene中使用。
                     scene.screen = self.screen #渲染器
                     scene.update_rate = self.update_rate #刷新频率
                     scene.clock = self.clock #刷新频率设置对象
-                    scene.scenes = self.scenes
+                    scene.scenes = self.scenes#获得当前所有游戏片段
+                    scene.resolution = self.resolution#分辨率，用来获得场景的宽高
                     scene.run()
 
 
 class Scene:
-    def __init__(self):
-        self.screen = None
+    '''
+    游戏片段(scene)--可能是游戏中的一个片段，一个情节，一节过场，片头，片尾等，游戏片段中包含一个开关属性，用来控制是否可以渲染此游戏片段。
+    '''
+    def __init__(self, screen):
+        '''
+
+        :param screen:游戏中唯一的渲染器
+        '''
+        self.screen = screen
         self.update_rate = 24
         self.scenes = []#所有游戏的片段list
         self.id = ''
