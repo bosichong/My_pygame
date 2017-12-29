@@ -1,24 +1,18 @@
 #codeing=utf-8
-# @Time    : 2017-10-26
+# @Time    : 2017-12-28
 # @Author  : J.sky
 # @Mail    : bosichong@qq.com
 # @Site    : www.17python.com
-# @Title   : “编学编玩”用Pygame编写游戏（5）PY_RPG 一个pygame的简单封装。
-# @Url     : http://www.17python.com/blog/49
-# @Details : “编学编玩”用Pygame编写游戏（5）PY_RPG 一个pygame的简单封装。
+# @Title   : “编学编玩”用Pygame编写游戏（6）PY_RPG 一个pygame的简单封装。
+# @Url     : http://www.17python.com/blog/70
+# @Details : “编学编玩”用Pygame编写游戏（6）PY_RPG 一个pygame的简单封装。
 # @Other   : OS X 10.11.6 
 #            Python 3.6.1
 #            VSCode 1.15.1
 ###################################
 # “编学编玩”用Pygame编写游戏（6）PY_RPG 一个pygame的简单封装。
 ###################################
-import pygame, os, sys
 import random
-from pygame.locals import * #导入游戏常量
-
-#导入自定义游戏包
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))#获取当前文件上级目录的绝对地址
-sys.path.append(BASE_DIR)#添加一个模块搜索目录，方便找到自己的建的模块
 
 from PY_RPG.PygameApp import *
 from PY_RPG.util import * #导入辅助工具函数及一些常量
@@ -35,7 +29,7 @@ class MainScene(Scene):
         self.screen.fill((0,0,0))
         print_text(self.screen,title_h3,250,250,'请按回车键切换到下一屏。')
 
-    def updae(self):
+    def update(self):
         pass
 
     def handle_event(self,event):
@@ -73,7 +67,7 @@ class TestScene(Scene):
         self.myimgs.draw(self.screen)
         print_text(self.screen, title_h3, self.t_x, self.t_y, 'hello world请按回车继续', )
 
-    def updae(self):
+    def update(self):
         self.ms.update()
         # 红绿边界碰撞检测
         for sp in self.myimgs:

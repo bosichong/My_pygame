@@ -53,7 +53,7 @@ pygame.display.set_caption("Hello World!")
 # 这里有个死循环，这是游戏的主要逻辑处理及场景渲染器，for循环是处理游戏中的事件触发，其中QUIT表示触发了游戏离开件事，然后调用pygame.quit()函数。
 # pygame.display.updae()这个函数表示更新当前screen的画面。
 while True:
-    for event in pygame.event.get():···
+    for event in pygame.event.get():
         if event.type == QUIT:
             pygame.quit()
     pygame.display.update()

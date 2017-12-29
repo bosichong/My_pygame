@@ -74,6 +74,8 @@ class GameApp:
         :param resolution: 场景尺寸(640，480)
         :param update_rate: 刷频率默认24
         '''
+        pygame.init()
+        pygame.key.set_repeat(10)  # 重复响应一个按键
         self.title = title#游戏标题
         self.resolution = resolution#分辨率
         self.update_rate = update_rate#刷新频率
@@ -82,6 +84,7 @@ class GameApp:
         self.screen = pygame.display.set_mode(self.resolution)
         self.clock = pygame.time.Clock()
         pygame.display.set_caption(self.title)
+        pygame.key.set_repeat(10)#设置键盘连续响应
         
 
     def run(self):
@@ -89,6 +92,7 @@ class GameApp:
         游戏开始。
         '''
         print('游戏开始！')
+
         while True:
             for scene in self.scenes:
                 #如果当前片段可以开始，则开始渲染
@@ -121,7 +125,7 @@ class Scene:
     def draw(self):
         '''此方法需要重写，用来绘制游戏中所有场景及角色'''
         pass
-    def updae(self):
+    def update(self):
         '''此方法需要重写，此方法用来更新游戏中精灵的属性，处理场景切换。'''
         pass
     def handle_event(self, event):
@@ -138,7 +142,7 @@ class Scene:
                         sys.exit()
                     self.handle_event(event)
                 self.draw()
-                self.updae()
+                self.update()
                 pygame.display.flip()
                 self.clock.tick(self.update_rate)#设置帧速率
                 if not self.start:

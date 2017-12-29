@@ -20,7 +20,7 @@ from pygame.locals import * #导入游戏常量
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))#获取当前文件上级目录的绝对地址
 sys.path.append(BASE_DIR)#添加一个模块搜索目录，方便找到自己的建的模块
 from PY_RPG.util import *
-
+print(BASE_DIR)
 
 
 # def bubble_sort(lists):

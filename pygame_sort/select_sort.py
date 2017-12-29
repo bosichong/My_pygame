@@ -15,7 +15,7 @@
 
 import pygame, sys, random
 from pygame.locals import * #导入游戏常量
-from util import * #导入自己定义的一些工具方法
+from PY_RPG.util import * #导入自己定义的一些工具方法
 
 
 
