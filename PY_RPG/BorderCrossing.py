@@ -7,6 +7,13 @@
 class BorderCrossing:
     '''一个边界碰撞检测类'''
     def __init__(self,xstart,ystart,width,height):
+        '''
+
+        :param xstart: 场景X起点
+        :param ystart: 场景Y起点
+        :param width:  场景宽
+        :param height: 场景高
+        '''
         self.sprite = None#需要检测的对象
         #场景坐标起点及宽高。
         self.xstart = xstart

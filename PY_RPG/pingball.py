@@ -8,7 +8,7 @@
 # @Details : “编学编玩”用Pygame编写游戏（7）Pingball弹球小游戏
 # @Other   : OS X 10.11.6
 #            Python 3.6.1
-#            VSCode 1.15.1
+#            PyCharm
 ###################################
 # “编学编玩”用Pygame编写游戏（7）Pingball弹球小游戏
 ###################################
@@ -186,12 +186,12 @@ class Racket(pygame.sprite.Sprite):
     def __init__(self, display):
         pygame.sprite.Sprite.__init__(self)
         self.display = display  # 渲染器
-        self.rect = pygame.Rect((200, 340, 60, 20))  # 精灵的形状
+        self.rect = pygame.Rect((200, 340, 60, 20))#创建Rect对象
         self.speed = 3
         self.last_update = pygame.time.get_ticks()  # 游戏开始时的计时
 
     def draw(self):
-        pygame.draw.rect(self.display, LIGHTGRAY, self.rect, )
+        pygame.draw.rect(self.display, LGHTGRAY, self.rect, )
 
     def update(self):
         if self.rect.left <= 2 :
@@ -232,3 +232,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

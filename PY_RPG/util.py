@@ -12,6 +12,7 @@
 '''
 import os
 import pygame, os, sys
+import random
 from pygame.locals import * #导入游戏常量
 #设置常用目录
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))#获取当前文件上级目录的绝对地址
@@ -25,7 +26,7 @@ WHITE = (255,255,255,)
 RED = (255,0,0)
 GREEN  = (0,255,0)
 BLUE = (0,0,255)
-LIGHTGRAY = (192,192,192)
+LGHTGRAY = (192,192,192)
 
 ## 有关场景中一些文字打印的常用设置
 title_h3 = pygame.font.Font(os.path.join(FONT_DIR,'msyh.ttf'), 28)
