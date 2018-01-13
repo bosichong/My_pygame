@@ -1,11 +1,11 @@
 # codeing=utf-8
-# @Time    : 2018-01-05
+# @Time    : 2018-01-13
 # @Author  : J.sky
 # @Mail    : bosichong@qq.com
 # @Site    : www.17python.com
-# @Title   : “编学编玩”用Pygame编写游戏（8）GreedSnake贪食蛇小游戏
+# @Title   : # “编学编玩”用Pygame编写游戏（9）Tetromino俄罗斯方块游戏
 # @Url     : http://www.17python.com/blog/71
-# @Details : “编学编玩”用Pygame编写游戏（8）GreedSnake贪食蛇小游戏
+# @Details : # “编学编玩”用Pygame编写游戏（9）Tetromino俄罗斯方块游戏
 # @Other   : OS X 10.11.6
 #            Python 3.6.1
 #            PyCharm
@@ -109,12 +109,20 @@ class MainScnen(Scene):
         super().__init__(screen)
         self.id = 'mainscnen'
         self.start = True
+        self.ps = list()
+        for i in range(random.randint(10,30)):
+            self.ps.append(Piece(self.screen))
+        for p in self.ps:
+            p.x = random.randint(-5,15)
+            p.y = random.randint(1,15)
 
     def draw(self):
         self.screen.fill(COLOR_Snow)
+        for p in self.ps:
+            p.draw()
         print_text(self.screen, title_h3, 30, 340, 'Tetromino俄罗斯方块', color= COLOR_Orange2)
         print_text(self.screen, title_plain, 30, 380, '准备游戏，按回车键开始,空格暂停,方向上旋转，左右下控制移动。',
-                   color=COLOR_LightSkyBlue)
+                   color=LGHTGRAY)
 
     def update(self):
         pass
@@ -151,7 +159,6 @@ class Tetromino(Scene):
         self.board = [[0 for col in range(BOARDHEIGHT)] for row in range(BOARDWIDTH)]  # 场景中的board
         self.score = 0  # 初始化分数
         self.hscore =0
-        self.board_color1 = random.choice((COLOR_Salmon, COLOR_LightSkyBlue, COLOR_Khaki1,COLOR_OliveDrab1,COLOR_Orchid,COLOR_Orange2))  # 初始固定方块化颜色
         self.replay()  # 初始化游戏场景中的board
         self.fps = 500 #刷新频率，通过游戏得分来控制这个速度
         self.tempscore =0
@@ -160,15 +167,15 @@ class Tetromino(Scene):
         '''初始化或重新开始游戏'''
         for i in range(BOARDWIDTH):
             for j in range(BOARDHEIGHT):
-                self.board[i][j] = 0
+                self.board[i][j] = [0,'']
 
         for i in range(BOARDWIDTH):
-            self.board[i][0] = 2
-            self.board[i][BOARDHEIGHT - 1] = 2
+            self.board[i][0] = [2,'']
+            self.board[i][BOARDHEIGHT - 1] = [2,'']
 
         for j in range(BOARDHEIGHT):
-            self.board[0][j] = 2
-            self.board[BOARDWIDTH - 1][j] = 2
+            self.board[0][j] = [2,'']
+            self.board[BOARDWIDTH - 1][j] = [2,'']
         #记录历史最高分
         if self.score > self.hscore:
             self.hscore = self.score
@@ -182,10 +189,9 @@ class Tetromino(Scene):
         for a in range(self.piece.template_w):
             for b in range(self.piece.template_h):
                 if (self.piece.shapes[self.piece.type][self.piece.direction][b][a] == 1 and self.board[x + b][
-                    y + a] == 2) or (
+                    y + a][0] == 2) or (
                         self.piece.shapes[self.piece.type][self.piece.direction][b][a] == 1 and self.board[x + b][
-                    y + a] == 1):
-                    print(self.piece.y + a)
+                    y + a][0] == 1):
                     return 0
         return 1
 
@@ -230,22 +236,25 @@ class Tetromino(Scene):
         for i in range(self.piece.template_w):
             for j in range(self.piece.template_h):
                 if self.piece.shapes[self.piece.type][self.piece.direction][i][j] == 1:
-                    self.board[self.piece.x + i][self.piece.y + j] = \
+                    self.board[self.piece.x + i][self.piece.y + j][0] = \
                         self.piece.shapes[self.piece.type][self.piece.direction][i][j]
+                    self.board[self.piece.x + i][self.piece.y + j][1] = self.piece.color
+
+
 
     def delline(self):
         '''消行'''
         c = 0
         for b in range(BOARDHEIGHT):
             for a in range(BOARDWIDTH):
-                if self.board[a][b] == 1:
+                if self.board[a][b][0] == 1:
                     c += 1
                     if c == BOARDWIDTH - 2:
                         self.score += 10
                         for d in range(b, -1, -1):
                             for e in range(BOARDWIDTH):
-                                if self.board[e][d - 1] != 2:  # 只要不是外围的墙
-                                    self.board[e][d] = self.board[e][d - 1]  # 都往下落一层
+                                if self.board[e][d - 1][0] != 2:  # 只要不是外围的墙
+                                    self.board[e][d][0] = self.board[e][d - 1][0]  # 都往下落一层
             c = 0  # 清空计数器
 
     def changelevel(self):
@@ -272,12 +281,12 @@ class Tetromino(Scene):
         # 画四周的墙和方块
         for i in range(BOARDWIDTH):
             for j in range(BOARDHEIGHT):
-                if self.board[i][j] == 2:  # 画墙
-                    pygame.draw.rect(self.screen, self.board_color1,
+                if self.board[i][j][0] == 2:  # 画墙
+                    pygame.draw.rect(self.screen, COLOR_PeachPuff,
                                      (int(((RESOLUTION[0] - BOARDWIDTH * BOXSIZE) / 2) + i * BOXSIZE),
                                       int((RESOLUTION[1] - BOARDHEIGHT * BOXSIZE) / 2) + j * BOXSIZE, BOXSIZE, BOXSIZE))
-                if self.board[i][j] == 1:  # 画已经在板中固定的方块
-                    pygame.draw.rect(self.screen, COLOR_PeachPuff,
+                if self.board[i][j][0] == 1:  # 画已经在板中固定的方块
+                    pygame.draw.rect(self.screen, self.board[i][j][1],
                                      (int(((RESOLUTION[0] - BOARDWIDTH * BOXSIZE) / 2) + i * BOXSIZE),
                                       int((RESOLUTION[1] - BOARDHEIGHT * BOXSIZE) / 2) + j * BOXSIZE, BOXSIZE, BOXSIZE))
 
