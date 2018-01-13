@@ -120,6 +120,7 @@ class Scene:
         self.scenes = []#所有游戏的片段list
         self.id = ''
         self.start = False #每个场景都有一个开关标识，用来控制当前场景是否要开始渲染
+        self.pause = False  # 游戏暂停控制
 
 
     def draw(self):

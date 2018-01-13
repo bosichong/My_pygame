@@ -84,7 +84,7 @@
 
 ## 生成食物与吃掉食物。
 
-关于生成食物的逻辑主要是有一点，不在能生在蛇身上节点的位置，这样的话我们就需要把整个地图做一个list，标记哪里有蛇节点，然后在没有蛇节点的位置生成食物。
+关于生成食物的逻辑主要是有一点，不在能生在蛇身上节点的位置，只要食物和蛇身的坐标没有重叠，那么这个位置即可生成食物。
 吃掉食物，先判断蛇的移动方向，然后取蛇身list[0]，根据移动的方向模拟增加一个移动位置，如果正好遇食物重叠，那么增加食物的坐标为当前蛇头的坐标即可，然后记得把之前的蛇头颜色换成蛇身的。
 
 ## 游戏结束
@@ -126,8 +126,8 @@ SH = 38
 
 
 class MainScnen(Scene):
-    def __init__(self, scene):
-        super(MainScnen, self).__init__(scene)
+    def __init__(self, screen):
+        super().__init__(screen)
         self.id = 'mainscnen'
         self.start = True
 
@@ -154,9 +154,8 @@ class MainScnen(Scene):
 
 class GreedSnake(Scene):
     def __init__(self, screen):
-        super().__init__(self)
+        super().__init__(screen)
         self.id = 'GreedSnake'  # 场景ID
-        self.screen = screen
         self.gamebackground = GameBackground(self.screen)  # 游戏场景背景
         self.bodys = []  # 创建一个精灵组，用来放置蛇的身体
         self.direction = DOWN  # 移动方向

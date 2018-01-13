@@ -21,17 +21,31 @@ FONT_DIR = os.path.join(BASE_DIR,'font')
 
 pygame.init()
 
+#颜色常量
 BLACK = (0,0,0)
 WHITE = (255,255,255,)
 RED = (255,0,0)
 GREEN  = (0,255,0)
 BLUE = (0,0,255)
 LGHTGRAY = (192,192,192)
+COLOR_Gainsboro = (220, 220, 220,)
+COLOR_Snow = (255, 250, 250)
+COLOR_AntiqueWhite = (250, 235, 215)
+COLOR_PeachPuff =(255, 218, 185)
+
+COLOR_Salmon=(250, 128, 114)
+COLOR_LightSkyBlue=(135, 206, 250)
+COLOR_Khaki1 =(255, 246, 143)
+COLOR_OliveDrab1 =(192, 255, 62)
+COLOR_Orchid=(218, 112, 214)
+COLOR_Orange2 =(238, 154, 0)
 
 ## 有关场景中一些文字打印的常用设置
 title_h3 = pygame.font.Font(os.path.join(FONT_DIR,'msyh.ttf'), 28)
 title_h2 = pygame.font.Font(os.path.join(FONT_DIR,'msyh.ttf'), 20)
 title_plain = pygame.font.Font(os.path.join(FONT_DIR,'msyh.ttf'), 16)
+# 使用示例
+# print_text(self.screen, title_h2, 30, 340, 'Tetromino俄罗斯方块', color=BLACK)
 def print_text(screen,font, x, y, text, color=(255,255,255)):
     '''一个游戏中绘制游戏中文字的函数方法'''
     imgText = font.render(text, True, color,)
