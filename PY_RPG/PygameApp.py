@@ -123,6 +123,7 @@ class Scene:
         self.pause = False  # 游戏暂停控制
 
 
+
     def draw(self):
         '''此方法需要重写，用来绘制游戏中所有场景及角色'''
         pass

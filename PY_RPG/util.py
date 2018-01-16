@@ -44,6 +44,12 @@ COLOR_Orange2 =(238, 154, 0)
 title_h3 = pygame.font.Font(os.path.join(FONT_DIR,'msyh.ttf'), 28)
 title_h2 = pygame.font.Font(os.path.join(FONT_DIR,'msyh.ttf'), 20)
 title_plain = pygame.font.Font(os.path.join(FONT_DIR,'msyh.ttf'), 16)
+
+
+def getFont(size):
+    '''获取一个可控制文字大小的字体对象'''
+    return pygame.font.Font(os.path.join(FONT_DIR, 'msyh.ttf'), size)
+
 # 使用示例
 # print_text(self.screen, title_h2, 30, 340, 'Tetromino俄罗斯方块', color=BLACK)
 def print_text(screen,font, x, y, text, color=(255,255,255)):

@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36966519-d591-40af-ae82-1a312adb52dc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/PY_RPG/Tetromino.py" afterPath="$PROJECT_DIR$/PY_RPG/Tetromino.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/PY_RPG/demo/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/PY_RPG/demo/matrix.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/font/mono.ttf" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/PY_RPG/GreedSnake.py" afterPath="$PROJECT_DIR$/PY_RPG/demo/GreedSnake.py" />
+      <change beforePath="$PROJECT_DIR$/PY_RPG/PygameApp.py" afterPath="$PROJECT_DIR$/PY_RPG/PygameApp.py" />
+      <change beforePath="$PROJECT_DIR$/PY_RPG/Tetromino.py" afterPath="$PROJECT_DIR$/PY_RPG/demo/Tetromino.py" />
+      <change beforePath="$PROJECT_DIR$/PY_RPG/demo01.py" afterPath="$PROJECT_DIR$/PY_RPG/demo/demo01.py" />
+      <change beforePath="$PROJECT_DIR$/PY_RPG/pingball.py" afterPath="$PROJECT_DIR$/PY_RPG/demo/pingball.py" />
+      <change beforePath="$PROJECT_DIR$/PY_RPG/util.py" afterPath="$PROJECT_DIR$/PY_RPG/util.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,30 +22,32 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/My_pygame$demo02.coverage" NAME="pingball Coverage Results" MODIFIED="1514550277122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY_RPG" />
-    <SUITE FILE_PATH="coverage/My_pygame$Tetromino.coverage" NAME="Tetromino Coverage Results" MODIFIED="1515830076987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY_RPG" />
+    <SUITE FILE_PATH="coverage/My_pygame$BorderCrossing.coverage" NAME="BorderCrossing Coverage Results" MODIFIED="1516024531131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY_RPG/demo" />
+    <SUITE FILE_PATH="coverage/My_pygame$Tetromino.coverage" NAME="Tetromino Coverage Results" MODIFIED="1516025339122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY_RPG" />
     <SUITE FILE_PATH="coverage/My_pygame$pygame00.coverage" NAME="pygame00 Coverage Results" MODIFIED="1514549695754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/My_pygame$GreedSnake.coverage" NAME="GreedSnake Coverage Results" MODIFIED="1515672492382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY_RPG" />
+    <SUITE FILE_PATH="coverage/My_pygame$GreedSnake.coverage" NAME="GreedSnake Coverage Results" MODIFIED="1516024567681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY_RPG" />
     <SUITE FILE_PATH="coverage/My_pygame$PygameApp.coverage" NAME="PygameApp Coverage Results" MODIFIED="1514548888539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY_RPG" />
     <SUITE FILE_PATH="coverage/My_pygame$pygame02.coverage" NAME="pygame02 Coverage Results" MODIFIED="1514516875252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/My_pygame$matrix.coverage" NAME="matrix Coverage Results" MODIFIED="1516068794976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY_RPG/demo" />
     <SUITE FILE_PATH="coverage/My_pygame$pygame03.coverage" NAME="pygame03 Coverage Results" MODIFIED="1514516887931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/My_pygame$select_sort.coverage" NAME="select_sort Coverage Results" MODIFIED="1514546845600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pygame_sort" />
     <SUITE FILE_PATH="coverage/My_pygame$pygame01.coverage" NAME="pygame01 Coverage Results" MODIFIED="1514516930592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/My_pygame$pygame04.coverage" NAME="pygame04 Coverage Results" MODIFIED="1514341414354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonQA" />
     <SUITE FILE_PATH="coverage/My_pygame$bubble_sort.coverage" NAME="bubble_sort Coverage Results" MODIFIED="1514546750971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pygame_sort" />
     <SUITE FILE_PATH="coverage/My_pygame$util.coverage" NAME="util Coverage Results" MODIFIED="1514465739770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY_RPG" />
-    <SUITE FILE_PATH="coverage/My_pygame$demo01.coverage" NAME="demo01 Coverage Results" MODIFIED="1514548162363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY_RPG" />
+    <SUITE FILE_PATH="coverage/My_pygame$demo01.coverage" NAME="demo01 Coverage Results" MODIFIED="1516024502530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY_RPG" />
+    <SUITE FILE_PATH="coverage/My_pygame$pingball.coverage" NAME="pingball Coverage Results" MODIFIED="1516024662734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY_RPG" />
     <SUITE FILE_PATH="coverage/My_pygame$pygame05.coverage" NAME="pygame05 Coverage Results" MODIFIED="1514516901446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/My_pygame$insert_sort.coverage" NAME="insert_sort Coverage Results" MODIFIED="1514546802564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pygame_sort" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Tetromino.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PY_RPG/Tetromino.py">
+      <file leaf-file-name="Tetromino.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PY_RPG/demo/Tetromino.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="12" />
+            <state relative-caret-position="324">
+              <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="26" />
               <folding>
-                <element signature="e#2561#2574#0" expanded="true" />
                 <element signature="e#8181#8307#0" expanded="false" />
                 <element signature="e#12582#16745#0" expanded="false" />
                 <element signature="e#12632#13047#0" expanded="false" />
@@ -45,7 +56,6 @@
                 <element signature="e#14827#15636#0" expanded="false" />
                 <element signature="e#15671#16482#0" expanded="false" />
                 <element signature="e#16517#16733#0" expanded="false" />
-                <element signature="e#17932#18188#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -54,10 +64,35 @@
       <file leaf-file-name="util.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PY_RPG/util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="8" />
+            <state relative-caret-position="287">
+              <caret line="56" column="45" lean-forward="true" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
               <folding>
                 <element signature="e#235#244#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PygameApp.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PY_RPG/PygameApp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="83" column="61" lean-forward="false" selection-start-line="83" selection-start-column="61" selection-end-line="83" selection-end-column="61" />
+              <folding>
+                <element signature="e#1559#1577#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Matrix.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PY_RPG/demo/Matrix.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="46" column="68" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="46" selection-end-column="68" />
+              <folding>
+                <element signature="e#1408#1440#0" expanded="true" />
+                <element signature="e#1585#2293#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -97,9 +132,13 @@
         <option value="$PROJECT_DIR$/pygame00.py" />
         <option value="$PROJECT_DIR$/PY_RPG/BorderCrossing.py" />
         <option value="$PROJECT_DIR$/PY_RPG/GreedSnake.py" />
+        <option value="$PROJECT_DIR$/PY_RPG/Tetromino.py" />
+        <option value="$PROJECT_DIR$/PY_RPG/demo/BorderCrossing.py" />
+        <option value="$PROJECT_DIR$/PY_RPG/demo/pingball.py" />
         <option value="$PROJECT_DIR$/PY_RPG/PygameApp.py" />
         <option value="$PROJECT_DIR$/PY_RPG/util.py" />
-        <option value="$PROJECT_DIR$/PY_RPG/Tetromino.py" />
+        <option value="$PROJECT_DIR$/PY_RPG/demo/matrix.py" />
+        <option value="$PROJECT_DIR$/PY_RPG/demo/Matrix.py" />
       </list>
     </option>
   </component>
@@ -109,10 +148,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="-1057" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="774" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -132,7 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -144,21 +183,34 @@
             <path>
               <item name="My_pygame" type="b2602c69:ProjectViewProjectNode" />
               <item name="My_pygame" type="462c0819:PsiDirectoryNode" />
+              <item name="font" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="My_pygame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My_pygame" type="462c0819:PsiDirectoryNode" />
               <item name="PY_RPG" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="My_pygame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My_pygame" type="462c0819:PsiDirectoryNode" />
+              <item name="PY_RPG" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PY_RPG/demo" />
       <recent name="$PROJECT_DIR$/PY_RPG" />
       <recent name="$PROJECT_DIR$/pygame_sort" />
       <recent name="$PROJECT_DIR$" />
@@ -176,7 +228,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Tetromino">
+  <component name="RunManager" selected="Python.matrix">
+    <configuration name="BorderCrossing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PY_RPG/demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="My_pygame" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PY_RPG/demo/BorderCrossing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="GreedSnake" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -190,26 +261,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="My_pygame" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PY_RPG/GreedSnake.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="PygameApp" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PY_RPG" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="My_pygame" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PY_RPG/PygameApp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PY_RPG/demo/GreedSnake.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -228,7 +280,26 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="My_pygame" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PY_RPG/Tetromino.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PY_RPG/demo/Tetromino.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="matrix" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PY_RPG/demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="My_pygame" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PY_RPG/demo/Matrix.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -247,26 +318,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="My_pygame" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PY_RPG/pingball.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="pygame00" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="My_pygame" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pygame00.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PY_RPG/demo/pingball.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -274,18 +326,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.pingball" />
-      <item index="1" class="java.lang.String" itemvalue="Python.PygameApp" />
-      <item index="2" class="java.lang.String" itemvalue="Python.pygame00" />
-      <item index="3" class="java.lang.String" itemvalue="Python.GreedSnake" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Tetromino" />
+      <item index="1" class="java.lang.String" itemvalue="Python.GreedSnake" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Tetromino" />
+      <item index="3" class="java.lang.String" itemvalue="Python.BorderCrossing" />
+      <item index="4" class="java.lang.String" itemvalue="Python.matrix" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Tetromino" />
-        <item index="1" class="java.lang.String" itemvalue="Python.GreedSnake" />
+        <item index="0" class="java.lang.String" itemvalue="Python.matrix" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Tetromino" />
         <item index="2" class="java.lang.String" itemvalue="Python.pingball" />
-        <item index="3" class="java.lang.String" itemvalue="Python.pygame00" />
-        <item index="4" class="java.lang.String" itemvalue="Python.PygameApp" />
+        <item index="3" class="java.lang.String" itemvalue="Python.GreedSnake" />
+        <item index="4" class="java.lang.String" itemvalue="Python.BorderCrossing" />
       </list>
     </recent_temporary>
   </component>
@@ -318,28 +370,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1057" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
+    <frame x="1" y="23" width="1440" height="774" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902297" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902297" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34913793" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15862808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3480243" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32674772" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14141414" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12481962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5718391" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5714286" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32965517" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
@@ -416,46 +467,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PY_RPG/pingball.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="149" selection-end-column="39" />
-          <folding>
-            <element signature="e#1556#1569#0" expanded="false" />
-            <element signature="e#1755#2520#0" expanded="false" />
-            <element signature="e#4481#5171#0" expanded="false" />
-            <element signature="e#5821#6558#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PY_RPG/GreedSnake.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3978">
-          <caret line="245" column="46" lean-forward="true" selection-start-line="245" selection-start-column="46" selection-end-line="245" selection-end-column="46" />
-          <folding>
-            <element signature="e#2406#2438#0" expanded="false" />
-            <element signature="e#2710#3498#0" expanded="false" />
-            <element signature="e#4005#4341#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PY_RPG/BorderCrossing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pygame02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3240">
-          <caret line="183" column="16" lean-forward="false" selection-start-line="183" selection-start-column="16" selection-end-line="183" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PY_RPG/util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -476,14 +487,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY_RPG/demo01.py">
+    <entry file="file://$PROJECT_DIR$/PY_RPG/demo/demo01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY_RPG/pingball.py">
+    <entry file="file://$PROJECT_DIR$/PY_RPG/demo/pingball.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
@@ -491,7 +502,6 @@
             <element signature="e#1556#1569#0" expanded="false" />
             <element signature="e#1755#2520#0" expanded="false" />
             <element signature="e#4481#5171#0" expanded="false" />
-            <element signature="e#5821#6558#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -523,7 +533,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY_RPG/demo01.py">
+    <entry file="file://$PROJECT_DIR$/PY_RPG/demo/demo01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
           <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="83" selection-end-column="40" />
@@ -564,7 +574,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY_RPG/pingball.py">
+    <entry file="file://$PROJECT_DIR$/PY_RPG/demo/pingball.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1422">
           <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
@@ -572,12 +582,11 @@
             <element signature="e#1556#1569#0" expanded="false" />
             <element signature="e#1755#2520#0" expanded="false" />
             <element signature="e#4481#5171#0" expanded="false" />
-            <element signature="e#5821#6558#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY_RPG/demo01.py">
+    <entry file="file://$PROJECT_DIR$/PY_RPG/demo/demo01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3222">
           <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="186" selection-end-column="19" />
@@ -594,7 +603,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY_RPG/demo01.py">
+    <entry file="file://$PROJECT_DIR$/PY_RPG/demo/demo01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3204">
           <caret line="180" column="0" lean-forward="true" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
@@ -625,7 +634,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY_RPG/demo01.py">
+    <entry file="file://$PROJECT_DIR$/PY_RPG/demo/demo01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -639,7 +648,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY_RPG/demo01.py">
+    <entry file="file://$PROJECT_DIR$/PY_RPG/demo/demo01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -759,13 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY_RPG/demo01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pygame00.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -789,41 +791,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PY_RPG/BorderCrossing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        <state relative-caret-position="198">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY_RPG/GreedSnake.py">
+    <entry file="file://$PROJECT_DIR$/PY_RPG/demo/demo01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2536">
-          <caret line="264" column="0" lean-forward="false" selection-start-line="264" selection-start-column="0" selection-end-line="270" selection-end-column="37" />
+        <state relative-caret-position="-955">
+          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="31" />
           <folding>
-            <element signature="e#2406#2438#0" expanded="false" />
+            <element signature="e#463#476#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY_RPG/demo/GreedSnake.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="252" column="46" lean-forward="true" selection-start-line="252" selection-start-column="46" selection-end-line="252" selection-end-column="46" />
+          <folding>
             <element signature="e#2710#3498#0" expanded="false" />
             <element signature="e#4005#4341#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY_RPG/pingball.py">
+    <entry file="file://$PROJECT_DIR$/PY_RPG/demo/pingball.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="149" selection-end-column="39" />
+        <state relative-caret-position="219">
+          <caret line="210" column="0" lean-forward="true" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
           <folding>
-            <element signature="e#1556#1569#0" expanded="false" />
             <element signature="e#1755#2520#0" expanded="false" />
             <element signature="e#4481#5171#0" expanded="false" />
-            <element signature="e#5821#6558#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-506">
+          <caret line="97" column="8" lean-forward="false" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.3/python_stubs/-1199943127/pygame/display.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1868">
+          <caret line="142" column="31" lean-forward="true" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PY_RPG/PygameApp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+        <state relative-caret-position="125">
+          <caret line="83" column="61" lean-forward="false" selection-start-line="83" selection-start-column="61" selection-end-line="83" selection-end-column="61" />
           <folding>
             <element signature="e#1559#1577#0" expanded="true" />
           </folding>
@@ -832,20 +865,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PY_RPG/util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="8" />
+        <state relative-caret-position="287">
+          <caret line="56" column="45" lean-forward="true" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
           <folding>
             <element signature="e#235#244#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY_RPG/Tetromino.py">
+    <entry file="file://$PROJECT_DIR$/PY_RPG/demo/Tetromino.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="12" />
+        <state relative-caret-position="324">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="26" />
           <folding>
-            <element signature="e#2561#2574#0" expanded="true" />
             <element signature="e#8181#8307#0" expanded="false" />
             <element signature="e#12582#16745#0" expanded="false" />
             <element signature="e#12632#13047#0" expanded="false" />
@@ -854,7 +886,17 @@
             <element signature="e#14827#15636#0" expanded="false" />
             <element signature="e#15671#16482#0" expanded="false" />
             <element signature="e#16517#16733#0" expanded="false" />
-            <element signature="e#17932#18188#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY_RPG/demo/Matrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="46" column="68" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="46" selection-end-column="68" />
+          <folding>
+            <element signature="e#1408#1440#0" expanded="true" />
+            <element signature="e#1585#2293#0" expanded="false" />
           </folding>
         </state>
       </provider>

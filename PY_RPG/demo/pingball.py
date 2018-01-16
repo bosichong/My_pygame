@@ -210,7 +210,7 @@ class Ball(pygame.sprite.Sprite):
         self.last_update = pygame.time.get_ticks()  # 游戏开始时的计时
 
     def draw(self):
-        pygame.draw.ellipse(self.display, LIGHTGRAY, self.rect)
+        pygame.draw.ellipse(self.display, LGHTGRAY, self.rect)
 
     def update(self):
         '''更新自己的坐标，如果放在精灵组中，调用组的update()函数，会自动调用本函数'''
